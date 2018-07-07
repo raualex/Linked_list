@@ -1,5 +1,102 @@
 body {
   background-color: #455A64;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+article {
+	background-color: #FFFFFF;
+	border: 0.05rem solid #607D8B;
+	width: 80%;
+	height: 25%;
+	display: block;
+	margin: 1rem auto;
+	padding: 0.25rem 0.75rem 1.5rem;
+	position: relative;
+
+}
+
+h3 {
+	font-weight: 700;
+	color: #455A64;
+	margin: 0;
+}
+
+article button {
+	color: #455A64;
+	border-top: #FFFFFF;
+	border-right: #FFFFFF;
+	border-bottom: solid #F2F4F4 0.05rem;
+	border-left: #FFFFFF;
+	padding: 0.15rem 0.35rem;
+/*	position: absolute;
+	bottom: 0.25rem;
+*/}
+
+a:link {
+	color: #607D8B;
+	text-decoration: underline #F2F4F4;
+	position: absolute;
+	top: 0.7rem;
+}
+
+a:hover {
+	font-weight: 800;
+	text-decoration: underline #FFC107;
+}
+
+a:visited {
+	text-decoration: #CFD8DC;
+}
+
+article:visited {
+	background-color: #F2F4F4;
+}
+
+/*NEED HELP*/
+
+/*article button:visited {
+	font-weight: 800;
+	color: #F05A28;
+}*/
+
+article button:hover {
+	font-weight: 800;
+	text-decoration: underline #FFC107;
+}
+
+
+
+.title-search {
+	display: inline-block;
+	width: 50%;
+}
+
+.bookmarks-list {
+	background-color: #CFD8DC;
+	display: inline-block;
+	width: 50%;
+	position: absolute;
+}
+
+.link-border {
+	border-top: solid #CFD8DC 0.05rem;
+	border-right: #FFFFFF;
+	border-bottom: solid #CFD8DC 0.05rem;
+	border-left: #FFFFFF;
+	position: relative;
+	height: 2.75rem;
+	margin: 0.25rem;
+}
+
+.read-button {
+	/*left: 0.25rem;*/
+	float: left;
+}
+
+.delete-button {
+	/*right: 0.25rem;*/
+	float: right;
 }
 
 div {
