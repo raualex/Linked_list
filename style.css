@@ -58,6 +58,10 @@ form {
   width: 466px;
 }
 
+.enter-button:hover {
+  background-color: #FFD773;
+}
+
 .title2 {
   margin-left: 6px;
 }
