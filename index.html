@@ -6,19 +6,19 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 	</head>
 	<body>
-		<section class="title-search">
-			<header role="banner">
-				<h1>Linked</h1>
-				<img src="linked-list-logo.svg">
-				<h1>List</h1>
-			</header>
-			<form role="form">
-				<input type="text" name="Website Title" placeholder="Website Title" aria-label="Please enter a website title">
-				<input type="url" name="Website URL" placeholder="Website URL" aria-label="Please enter a website address">
-				<button type="submit">Enter</button>
-			</form>
-		</section>
-		<section class="bookmarks-list" role="main">
+		<div>
+		  <header role="banner">
+			  <h1>Linked</h1>
+			  <img src="linked-list-logo.svg">
+			  <h1 class="title2">List</h1>
+		  </header>
+		  <form role="form">
+		  	<input type="text" name="Website Title" placeholder="Website Title" aria-label="Please enter a website title">
+  			<input type="url" name="Website URL" placeholder="Website URL" aria-label="Please enter a website address">
+  			<button type="submit" class="enter-button">Enter</button>
+	  	</form>
+	  </div>
+		<section role="main">
 			<article aria-label="bookmark one">
 				<h3>The Website Title</h3>
 				<div class="link-border"><a href="http://frontend.turing.io/projects/pattrn-party.html" alt="Link to [bookmarked site]"> www.thewebsiteurl.com</a></div>
