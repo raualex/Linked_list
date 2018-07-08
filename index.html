@@ -13,8 +13,8 @@
 			  <h1 class="title2">List</h1>
 		  </header>
 		  <form role="form">
-		  	<input type="text" name="Website Title" placeholder="Website Title" aria-label="Please enter a website title">
-  			<input type="url" name="Website URL" placeholder="Website URL" aria-label="Please enter a website address">
+		  	<input type="text" name="Website Title" placeholder="Website Title" aria-label="Please enter a website title" id="title-input">
+  			<input type="url" name="Website URL" placeholder="Website URL" aria-label="Please enter a website address" id="url-input">
   			<button type="submit" class="enter-button">Enter</button>
 	  	</form>
 	  </div>
@@ -35,13 +35,13 @@
 				<h3>The Website Title</h3>
 				<div class="link-border"><a href="http://frontend.turing.io/projects/pattrn-party.html" alt="Link to [bookmarked site]"> www.thewebsiteurl.com</a></div>
 				<button class="read-button" type="button" href="http://frontend.turing.io/projects/linked-list.html" alt="Link to [bookmarked site]">Read</button>
-				<button class="delete-button" type="reset">Delete</button>
+				<button class="delete-button" type="reset" id="delete-button">Delete</button>
 			</article>
 			<article aria-label="bookmark one">
-				<h3>The Website Title</h3>
-				<div class="link-border"><a href="http://frontend.turing.io/projects/linked-list.html" alt="Link to [bookmarked site]"> www.thewebsiteurl.com</a></div>
-				<button class="read-button" type="button">Read</button>
-				<button class="delete-button" type="reset">Delete</button>
+				<h3 id="title-output">The Website Title</h3>
+				<div class="link-border"><a href="http://frontend.turing.io/projects/linked-list.html" alt="Link to [bookmarked site]" id="url-output"> www.thewebsiteurl.com</a></div>
+				<button class="read-button" type="button" id="read-button">Read</button>
+				<button class="delete-button" type="reset" id="delete-button">Delete</button>
 			</article>
 			<article aria-label="bookmark one">
 				<h3>The Website Title</h3>
@@ -67,5 +67,6 @@
 				<button class="read-button" type="button">Read</button>
 				<button class="delete-button" type="reset">Delete</button>
 		</section>
+		<script src="script.js" type="text/javascript"></script>
 	</body>
 </html>
