@@ -43,7 +43,6 @@ function submit() {
 
 function markRead(event) {
   event.preventDefault();
-  var element = document.querySelector('#bookmark-one');
   var article = event.target.parentNode;
   article.classList.toggle('read');
  };
