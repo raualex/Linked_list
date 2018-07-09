@@ -22,11 +22,14 @@ article {
   background-color: #FFFFFF;
   border: 0.05rem solid #607D8B;
   display: block;
-  height: 35%;
-  margin: 1rem auto;
+  height: 84px;
+  /*margin: 4rem auto;*/
+  margin: 0;
   padding: 0.25rem 0.75rem 1.5rem;
   position: relative;
-  width: 80%;
+  left: 0.5rem;
+  width: 92%;
+
 }
 
 article button {
@@ -50,12 +53,14 @@ body {
   background-color: #455A64;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
+  margin-left: 0%;
   margin-top: 0%;
   width: 100%;
 }
 
 div {
   display: inline-block;
+  float: left;
   height: 100%;
   width: 50%;
 }	
@@ -114,10 +119,16 @@ input {
   font-weight: 400;
 }
 
-.bookmarks-list {
+.bookmark-background {
   background-color: #CFD8DC;
+  padding: 0.5rem;
+}
+
+.bookmarks-list {
+  /*background-color: #CFD8DC;*/
   display: inline-block;
-  position: absolute;
+  float: right;
+  /*position: absolute;*/
   width: 50%;
 }
 
@@ -187,4 +198,19 @@ input {
 	display: inline-block;
 	height: 100%;
   width: 50%;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  div {
+    float: none;
+    height: 375px;
+    width: 100%;
+  }
+
+  .bookmarks-list {
+    float: none;
+    height: 375px;
+    width: 100%;
+  }
 }
