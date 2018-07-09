@@ -33,8 +33,8 @@ function submit() {
 	var bookmarkEntry = `<section class="bookmark-background">
 				<article aria-label="bookmark">
 				<h3>${webTitleInput.value}</h3>
-				<div class="link-border">
-				<a href="http://${webUrlInput.value}" alt="Link to ${webTitleInput.value}">${webUrlInput.value}</a></div>
+				<section class="link-border">
+				<a href="http://${webUrlInput.value}" alt="Link to ${webTitleInput.value}">${webUrlInput.value}</a></section>
 				<button class="read-button" type="button" onclick="markRead(event)">Read</button>
 				<button class="delete-button" type="reset" onclick="markDelete(event)">Delete</button>
 				</article></section>`;
