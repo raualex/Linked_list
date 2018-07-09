@@ -35,7 +35,7 @@ function submit() {
 				<div class="link-border">
 				<a href="${webUrlInput.value}" alt="Link to [bookmarked site]">${webUrlInput.value}</a></div>
 				<button class="read-button" type="button" onclick="markRead(event)">Read</button>
-				<button class="delete-button" type="reset">Delete</button>
+				<button class="delete-button" type="reset" onclick="markDelete(event)">Delete</button>
 				</article>`;
 
 	bookmarksList.innerHTML += bookmarkEntry ;
@@ -47,7 +47,9 @@ function markRead(event) {
   article.classList.toggle('read');
  };
 
-function markDelete() {
-
+function markDelete(event) {
+  event.preventDefault();
+  var bookmark = event.target.parentNode;
+  bookmark.parentNode.removeChild(bookmark);
 };
 
