@@ -34,16 +34,19 @@ function submit() {
 				<h3>${webTitleInput.value}</h3>
 				<div class="link-border">
 				<a href="${webUrlInput.value}" alt="Link to [bookmarked site]">${webUrlInput.value}</a></div>
-				<button class="read-button" type="button">Read</button>
+				<button class="read-button" type="button" onclick="markRead(event)">Read</button>
 				<button class="delete-button" type="reset">Delete</button>
 				</article>`;
 
 	bookmarksList.innerHTML += bookmarkEntry ;
 };
 
-function markRead() {
-
-};
+function markRead(event) {
+  event.preventDefault();
+  var element = document.querySelector('#bookmark-one');
+  var article = event.target.parentNode;
+  article.classList.toggle('read');
+ };
 
 function markDelete() {
 
