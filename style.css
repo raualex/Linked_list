@@ -189,5 +189,17 @@ input {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 900px) {
+  div {
+    float: none;
+    height: 150px;
+    width: 100%;
+  }
 
+  bookmarks-list {
+    float: none;
+    height: 150px;
+    width: 100%;
+  }
 
+}
