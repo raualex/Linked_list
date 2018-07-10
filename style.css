@@ -26,8 +26,8 @@ article {
   /*margin: 4rem auto;*/
   margin: 0;
   padding: 0.25rem 0.75rem 1.5rem;
-  position: relative;
-  left: 0.5rem;
+  /*position: relative;*/
+  /*left: 0.5rem;*/
   width: 92%;
 
 }
@@ -54,9 +54,7 @@ body {
   background-color: #455A64;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
-  margin-left: 0%;
-  margin-top: 0%;
-  margin-bottom: -2rem;
+  margin: 0;
   width: 100%;
 }
 
@@ -73,18 +71,19 @@ div {
 
 form {
   position: relative;
-  bottom: 100px;
+  /*bottom: 100px;*/
+  box-sizing: border-box;
 }
 
 h1 {
   color: #FFFFFF;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 253%;
+  font-size: 399%;
   font-weight: 800;
   margin: 0;
   text-align: center;
-
+  /*height: 2.5rem;*/
 
 
 }
@@ -97,20 +96,38 @@ h3 {
   padding-left: 0.25rem;
 }
 
-header {
+/*header {
   display: block;
   height: 2.5rem;
   margin-bottom: 7rem;
   margin-left: 3rem;
   margin-top: 14rem;
   width: 80%;
-}
+}*/
 
 img {
   display: inline-block;
-  height: 87%;
+  height: 41%;
   margin-left: 0.45rem;
 }
+
+
+
+header {
+  box-sizing: border-box;
+  display: block;
+  /*font-size: 1.75em;*/
+  height: 8rem;
+  margin-bottom: 4rem;
+  /*margin-left: 6rem;*/
+  margin-left: 1.7rem;
+  margin-top: 12rem;
+/*  padding-left: 0.5rem;*/
+  padding-top,bottom: 2rem;
+  /*width: 65%;*/
+  width: 90%;
+}
+
 
 input {
   box-sizing: border-box;
@@ -118,10 +135,12 @@ input {
   font-size: 1.75em;
 	height: 2.5rem;
   margin-bottom: 4rem;
-	margin-left: 6rem;
+	/*margin-left: 6rem;*/
+  margin-left: 1.65rem;
   padding-left: 0.5rem;
   padding-top,bottom: 2rem;
-  width: 65%;
+  /*width: 65%;*/
+  width: 90%;
 }
 
 ::placeholder {
@@ -159,8 +178,10 @@ input {
   height: 2.5rem;
   letter-spacing: 0.05em;
   margin-bottom: 18rem;
-  margin-left: 6rem;
-  width: 65%;
+  /*margin-left: 6rem;*/
+  margin-left: 1.65rem;
+  /*width: 65%;*/
+  width: 90%;
 }
 
 .enter-button:hover {
@@ -219,11 +240,16 @@ input {
     float: none;
     height: 375px;
     width: 100%;
+
   }
+
 
   .bookmarks-list {
     float: none;
     height: 375px;
     width: 100%;
+    /*top: 100px;*/
   }
 }
+@media screen and (max-width: 998px) {
+@media screen and (max-width: 600px) {
