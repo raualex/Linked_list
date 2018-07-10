@@ -28,6 +28,24 @@ enterBtn.addEventListener("click", submit);
 // //redundant
 // };
 
+document.getElementById('enter').disabled = true;
+
+webUrlInput.addEventListener('keyup', function() {
+  if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
+    document.getElementById('enter').disabled = false;
+  } else document.getElementById('enter').disabled = true;
+});
+
+webTitleInput.addEventListener('keyup', function() {
+  if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
+    document.getElementById('enter').disabled = false;
+  } else document.getElementById('enter').disabled = true;
+});
+
+enterBtn.addEventListener('click', function(event) {
+  document.getElementsByClassName('.enter-button').disabled = true;
+});
+
 function submit() {
 	event.preventDefault();
 	var bookmarkEntry = `<section class="bookmark-background">

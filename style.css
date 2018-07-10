@@ -163,8 +163,14 @@ input {
   width: 65%;
 }
 
-.enter-button:hover {
+.enter-button:hover:enabled {
   background-color: #FFD773;
+  cursor: pointer;
+}
+
+.enter-button:disabled {
+  /*background-color: #D0D2D3;*/
+  cursor: auto;
 }
 
 .link-border {
