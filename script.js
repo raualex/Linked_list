@@ -30,17 +30,14 @@ enterBtn.addEventListener("click", submit);
 
 document.getElementById('enter').disabled = true;
 
-webUrlInput.addEventListener('keyup', function() {
-  if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
-    document.getElementById('enter').disabled = false;
-  } else document.getElementById('enter').disabled = true;
-});
+webUrlInput.addEventListener('keyup', checkInput);
+webTitleInput.addEventListener('keyup', checkInput);
 
-webTitleInput.addEventListener('keyup', function() {
-  if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
+function checkInput() {
+    if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
     document.getElementById('enter').disabled = false;
   } else document.getElementById('enter').disabled = true;
-});
+};
 
 enterBtn.addEventListener('click', function(event) {
   document.getElementsByClassName('.enter-button').disabled = true;
