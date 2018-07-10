@@ -51,6 +51,6 @@ function markRead(event) {
 function markDelete(event) {
   event.preventDefault();
   var bookmark = event.target.parentNode;
-  bookmark.parentNode.removeChild(bookmark);
+  bookmark.parentNode.parentNode.removeChild(bookmark.parentNode);
 };
 
