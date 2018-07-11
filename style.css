@@ -122,6 +122,10 @@ input {
   width: 82%;
 }
 
+p {
+  margin: 1rem;
+}
+
 ::placeholder {
   color: #BBBDBF;
   font-family: 'Open Sans', sans-serif;
@@ -224,6 +228,11 @@ input {
   left: 0.25rem;
 }
 
+.read-bookmarks-counter, .unread-bookmarks-counter  {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
 .title2 {
   margin-left: 0.5rem;
 }
@@ -243,6 +252,8 @@ input {
 
   img {
     width: rem;
+  }
+}
 
 @media screen and (max-width: 1165px) {
   h1 {
@@ -252,14 +263,19 @@ input {
   img {
     width: 4.5rem;
   }
+}
 
+@media screen and (max-width: 999px) {
+  .read-bookmarks-counter, .unread-bookmarks-counter {
+      margin: 1%;
+  }
+}
 
 @media screen and (max-width: 900px) {
   div {
     float: none;
     height: 375px;
     width: 100%;
-
   }
 
   article {
@@ -270,7 +286,7 @@ input {
     float: none;
     height: 375px;
     width: 100%;
-    top: 37rem;
+    top: 41rem;
     padding: 0;
   }
 }
@@ -280,12 +296,14 @@ input {
     padding:0.5rem 1.2rem 1.5rem;
 
   }
+}
 
 @media screen and (max-width: 600px) {
   article {
     padding:0.5rem 0.9rem 1.5rem;
 
   }
+}
 
 @media screen and (max-width: 442px) {
     h1 {
@@ -316,7 +334,7 @@ input {
     float: none;
     height: 375px;
     width: 100%;
-    top: 19.25rem;
+    top: 24.25rem;
     padding: 0;
   }
 
