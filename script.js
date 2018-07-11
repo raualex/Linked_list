@@ -22,12 +22,13 @@ function checkInput() {
 
 function submitInput() {
       if (webTitleInput.value.length === 0) {
-    errorMsg.innerText = 'Please enter complete Website information';
+    errorMsg.innerText = 'Please complete entire form';
+
     document.getElementById('enter').disabled = true;
     webTitleInput.addEventListener('keyup', checkInput);
 
   } else if (webUrlInput.value.length === 0) {
-    errorMsg.innerText = 'Please enter complete Website information';
+    errorMsg.innerText = 'Please complete entire form';
     document.getElementById('enter').disabled = true;
     webUrlInput.addEventListener('keyup', checkInput);
   }
