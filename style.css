@@ -77,7 +77,7 @@ h1 {
   color: #FFFFFF;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.7rem;
   font-weight: 800;
   margin: 0;
   text-align: center;
@@ -105,7 +105,7 @@ header {
 
 img {
   display: inline-block;
-  width: 7rem;
+  width: 6rem;
   margin-left: 0.45rem;
 }
 
@@ -236,6 +236,14 @@ input {
 }
 
 /*Media Queries*/
+@media screen and (min-width: 1165px) {
+  h1 {
+    font-size: rem;
+  }
+
+  img {
+    width: rem;
+
 @media screen and (max-width: 1165px) {
   h1 {
     font-size: 3.5rem;
@@ -299,7 +307,7 @@ input {
     width: 100%;
   }
 
-    article {
+  article {
     padding:0.5rem 0.6rem 1.5rem;
 
   }
@@ -325,8 +333,3 @@ input {
   }
 
 }
-
-
-
-
-@media screen and (max-width: 600px) {
