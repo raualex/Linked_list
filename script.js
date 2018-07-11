@@ -6,6 +6,8 @@ var bookmarksList = document.querySelector(".bookmarks-list");
 var readBtn = document.querySelector("#read-button");
 var deleteBtn = document.querySelector("#delete-button");
 var errorMsg = document.querySelector(".error");
+var outputRead = document.querySelector(".read-bookmarks-counter");
+var outputUnread = document.querySelector(".unread-bookmarks-counter"); 
 
 //Event Listeners
 enterBtn.addEventListener("click", submit);
@@ -50,12 +52,24 @@ function submit(event) {
   } else {
     bookmarksList.innerHTML += bookmarkEntry ;
   }
+  postCountBookmarks();
 };
+
+
+function postCountBookmarks() {
+  var readCount = document.querySelectorAll('.read').length;
+  var totalBookmarks = document.querySelectorAll('.link-border').length;  
+  var unreadCount = totalBookmarks - readCount;
+  outputRead.innerText = 'Total read bookmarks: ' + readCount;
+  outputUnread.innerText =  'Total unread bookmarks: ' + unreadCount;
+};
+
 
 function markRead(event) {
   event.preventDefault();
   var article = event.target.parentNode;
   article.classList.toggle('read');
+  postCountBookmarks();
  };
 
 function markDelete(event) {
