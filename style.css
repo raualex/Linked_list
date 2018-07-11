@@ -30,7 +30,6 @@ article {
   position: relative;
   left: 0.5rem;
   width: 92%;
-
 }
 
 article button {
@@ -69,7 +68,10 @@ div {
 
 }	
 
-
+form {
+  position: relative;
+  box-sizing: border-box;
+}
 
 h1 {
   color: #FFFFFF;
@@ -79,9 +81,6 @@ h1 {
   font-weight: 800;
   margin: 0;
   text-align: center;
-
-
-
 }
 
 h3 {
@@ -91,15 +90,6 @@ h3 {
   box-sizing: border-box;
   padding-left: 0.25rem;
 }
-
-
-img {
-  display: inline-block;
-  width: 7rem;
-  margin-left: 0.45rem;
-}
-
-
 
 header {
   box-sizing: border-box;
@@ -113,6 +103,11 @@ header {
   text-align:center;
 }
 
+img {
+  display: inline-block;
+  width: 7rem;
+  margin-left: 0.45rem;
+}
 
 input {
   box-sizing: border-box;
@@ -124,7 +119,7 @@ input {
   margin-left: 1.65rem;*/
 /*  padding-left: 0.5rem;
   padding-top,bottom: 2rem;*/
-  width: 100%;
+  width: 82%;
 }
 
 ::placeholder {
@@ -171,12 +166,12 @@ input {
 /*  margin-bottom: 18rem;
   margin-left: 1.65rem;*/
   margin: 0 auto;
-  width: 100%;
+  width: 82%;
 }
 
 .enter-button:hover:enabled {
   background-color: #FFD773;
-  width: 100%;
+  width: 82%;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -186,9 +181,10 @@ input {
   cursor: auto;
 }
 
-form {
-  position: relative;
-  box-sizing: border-box;
+.error {
+  color: #ff0000;
+  font-weight: 800;
+  margin-top: 1rem;
 }
 
 .input-enter-btn {
@@ -300,6 +296,7 @@ form {
 
   input {
     margin-bottom: 1.5rem;
+    width: 100%;
   }
 
     article {
@@ -311,7 +308,7 @@ form {
     float: none;
     height: 375px;
     width: 100%;
-    top: 18.25rem;
+    top: 19.25rem;
     padding: 0;
   }
 
@@ -319,6 +316,14 @@ form {
   padding: 0.75rem 1.4rem 0rem 0.25rem;
   }
   
+  .enter-button {
+    width: 100%;
+  }
+
+  .enter-button:hover:enabled {
+    width: 100%;
+  }
+
 }
 
 
