@@ -22,9 +22,10 @@ article {
   background-color: #FFFFFF;
   border: 0.05rem solid #607D8B;
   display: block;
-  height: 84px;
+ /* height: 84px;*/
+ height: 5.5rem;
   margin: 4rem auto;
-  margin: 0;
+  margin: 0.25rem 0 0;
   padding: 0.25rem 0.75rem 1.5rem;
   position: relative;
   left: 0.5rem;
@@ -68,21 +69,17 @@ div {
 
 }	
 
-form {
-  position: relative;
-  /*bottom: 100px;*/
-  box-sizing: border-box;
-}
+
 
 h1 {
   color: #FFFFFF;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 4em;
+  font-size: 4.5rem;
   font-weight: 800;
   margin: 0;
   text-align: center;
-  /*height: 2.5rem;*/
+
 
 
 }
@@ -92,21 +89,13 @@ h3 {
   font-weight: 700;
   margin: 0;
   box-sizing: border-box;
-  padding-left: 0.25rem;
+  /*padding-left: 0.25rem;*/
 }
 
-/*header {
-  display: block;
-  height: 2.5rem;
-  margin-bottom: 7rem;
-  margin-left: 3rem;
-  margin-top: 14rem;
-  width: 80%;
-}*/
 
 img {
   display: inline-block;
-  height: 133%;
+  width: 7rem;
   margin-left: 0.45rem;
 }
 
@@ -115,16 +104,12 @@ img {
 header {
   box-sizing: border-box;
   display: block;
-  /*font-size: 1.75em;*/
   height: 3rem;
   margin-bottom: 4rem;
-  /*margin-left: 6rem;*/
-  margin-left: 1.7rem;
+/*  margin-left: 1.7rem;*/
   margin-top: 12rem;
-/*  padding-left: 0.5rem;*/
-  padding-top,bottom: 2rem;
-  /*width: 65%;*/
-  width: 90%;
+  /*padding-top,bottom: 2rem;*/
+  width: 100%;
   text-align:center;
 }
 
@@ -134,13 +119,12 @@ input {
   display: block;
   font-size: 1.75em;
 	height: 2.5rem;
-  margin-bottom: 4rem;
-	/*margin-left: 6rem;*/
-  margin-left: 1.65rem;
-  padding-left: 0.5rem;
-  padding-top,bottom: 2rem;
-  /*width: 65%;*/
-  width: 90%;
+  margin: 0 auto 3.5rem;
+  /*margin-bottom: 4rem;
+  margin-left: 1.65rem;*/
+/*  padding-left: 0.5rem;
+  padding-top,bottom: 2rem;*/
+  width: 100%;
 }
 
 ::placeholder {
@@ -151,17 +135,14 @@ input {
 
 .bookmark-background {
   background-color: #CFD8DC;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 .bookmarks-list {
-  /*background-color: #CFD8DC;*/
   display: inline-block;
   float: right;
   position: absolute;
   width: 50%;
-  overflow: scroll;
-  /*background-color: #CFD8DC;*/
   padding: 0 0.5rem 0.5rem;
   height: 100vh;
   top: 0;
@@ -181,15 +162,30 @@ input {
   font-weight: 800;
   height: 2.5rem;
   letter-spacing: 0.05em;
-  margin-bottom: 18rem;
-  /*margin-left: 6rem;*/
-  margin-left: 1.65rem;
-  /*width: 65%;*/
-  width: 90%;
+/*  margin-bottom: 18rem;
+  margin-left: 1.65rem;*/
+  margin: 0 auto;
+  width: 100%;
 }
 
 .enter-button:hover {
   background-color: #FFD773;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+form {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.input-enter-btn {
+/*  border: 1px solid red;*/
+  height: 50rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .link-border {
@@ -199,7 +195,7 @@ input {
   border-top: solid #CFD8DC 0.05rem;
   position: relative;
   height: 2.75rem;
-  margin: 0.25rem;
+  margin: 0.5rem 0.25rem 0.25rem;
   width: 98%;
 }
 
@@ -225,12 +221,6 @@ input {
   margin-left: 0.5rem;
 }
 
-/*NEED HELP*/
-
-/*article button:visited {
-	font-weight: 800;
-	color: #F05A28;
-}*/
 
 .title-search {
 	display: inline-block;
@@ -239,6 +229,16 @@ input {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 1165px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  img {
+    width: 4.5rem;
+  }
+
+
 @media screen and (max-width: 900px) {
   div {
     float: none;
@@ -252,8 +252,42 @@ input {
     float: none;
     height: 375px;
     width: 100%;
-    top: 40rem;
+    top: 37rem;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 442px) {
+    h1 {
+    font-size: 1.75rem;
+  }
+
+  header {
+    height: 0;
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 3rem;
+    margin: 0 auto;
+  }
+
+  input {
+    margin-bottom: 1.5rem;
+  }
+  .bookmarks-list {
+    float: none;
+    height: 375px;
+    width: 100%;
+    top: 18.25rem;
+    padding: 0;
+  }
+
+  .bookmark-background {
+  padding: 0.75rem 1.4rem 0rem 0.25rem;
+  }
+  
+}
+
+
+
+
 @media screen and (max-width: 600px) {
