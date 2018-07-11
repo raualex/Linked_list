@@ -168,12 +168,16 @@ input {
   width: 100%;
 }
 
-.enter-button:hover {
+.enter-button:hover:enabled {
   background-color: #FFD773;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
+.enter-button:disabled {
+  /*background-color: #D0D2D3;*/
+  cursor: auto;
 
 form {
   position: relative;
@@ -186,8 +190,8 @@ form {
   width: 90%;
   margin: 0 auto;
   padding: 0;
+  
 }
-
 .link-border {
   border-bottom: solid #CFD8DC 0.05rem;
   border-left: #FFFFFF;
