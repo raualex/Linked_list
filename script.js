@@ -42,7 +42,7 @@ function submit(event) {
 				<a href="http://${webUrlInput.value}" alt="Link to ${webTitleInput.value}">${webUrlInput.value}</a></section>
 				<button class="read-button" type="button" onclick="markRead(event)">Read</button>
 				<button class="delete-button" type="reset" onclick="markDelete(event)">Delete</button>
-				</article></section>`;
+        </article></section>`;
 
   if (webTitleInput.value.length === 0 || webUrlInput.value.length === 0) {
      submitInput();
