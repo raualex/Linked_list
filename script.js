@@ -8,6 +8,7 @@ var bookmarksList = document.querySelector(".bookmarks-list");
 // var urlOutput = document.querySelector("#url-output");
 var readBtn = document.querySelector("#read-button");
 var deleteBtn = document.querySelector("#delete-button");
+var errorMsg = document.querySelector(".error");
 
 //Event Listeners
 // webTitleInput.addEventListener("keyup", enterTitle);
@@ -28,22 +29,33 @@ enterBtn.addEventListener("click", submit);
 // //redundant
 // };
 
-document.getElementById('enter').disabled = true;
+// document.getElementById('enter').disabled = true;
 
-webUrlInput.addEventListener('keyup', checkInput);
-webTitleInput.addEventListener('keyup', checkInput);
+// webUrlInput.addEventListener('keyup', checkInput);
+// webTitleInput.addEventListener('keyup', checkInput);
 
 function checkInput() {
     if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
     document.getElementById('enter').disabled = false;
-  } else document.getElementById('enter').disabled = true;
+    errorMsg.innerText = '';
+  }
 };
 
-enterBtn.addEventListener('click', function(event) {
-  document.getElementsByClassName('.enter-button').disabled = true;
-});
 
-function submit() {
+function submitInput() {
+      if (webTitleInput.value.length === 0) {
+    errorMsg.innerText = 'Please enter complete Website information';
+    document.getElementById('enter').disabled = true;
+    webTitleInput.addEventListener('keyup', checkInput);
+
+  } else if (webUrlInput.value.length === 0) {
+    errorMsg.innerText = 'Please enter complete Website information';
+    document.getElementById('enter').disabled = true;
+    webUrlInput.addEventListener('keyup', checkInput);
+  }
+};
+
+function submit(event) {
 	event.preventDefault();
 	var bookmarkEntry = `<section class="bookmark-background">
 				<article aria-label="bookmark">
@@ -54,7 +66,11 @@ function submit() {
 				<button class="delete-button" type="reset" onclick="markDelete(event)">Delete</button>
 				</article></section>`;
 
-	bookmarksList.innerHTML += bookmarkEntry ;
+  if (webTitleInput.value.length === 0 || webUrlInput.value.length === 0) {
+     submitInput();
+  } else {
+    bookmarksList.innerHTML += bookmarkEntry ;
+  }
 };
 
 function markRead(event) {
