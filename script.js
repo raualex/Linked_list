@@ -12,7 +12,6 @@ var outputUnread = document.querySelector(".unread-bookmarks-counter");
 //Event Listeners
 enterBtn.addEventListener("click", submit);
 
-
 //Functions
 function checkInput() {
     if (webTitleInput.value.length !== 0 && webUrlInput.value.length !== 0) {
@@ -20,7 +19,6 @@ function checkInput() {
     errorMsg.innerText = '';
   }
 };
-
 
 function submitInput() {
       if (webTitleInput.value.length === 0) {
@@ -74,4 +72,5 @@ function markDelete(event) {
   event.preventDefault();
   var bookmark = event.target.parentNode;
   bookmark.parentNode.parentNode.removeChild(bookmark.parentNode);
+  postCountBookmarks();
 };
